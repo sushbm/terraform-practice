@@ -1,8 +1,8 @@
-resource "aws_instance" "example" {
-  ami           = var.ami_id
-  instance_type = var.instance_type
+resource "aws_instance" "my_instance" {
 
-  tags = {
-    Name = var.Name
-  }
+    ami = var.ami_id
+    instance_type = var.instance_type
+    tags = {
+        Name = var.Name
+    }
 }
