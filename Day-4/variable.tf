@@ -1,13 +1,18 @@
 variable "ami_id" {
-
-  default = "ami-01e04dba04096a3ca"
+  type = string
+  default = ""
 }
 variable "instance_type" {
-
-  default = "t3.micro"
+  type = string
+  default = ""
+}
+variable "region" {
+  type = string
+  default = ""
 }
 
+
 variable "Name" {
-  
-  default = "my_instance"
+  type = string
+  default = ""
 }

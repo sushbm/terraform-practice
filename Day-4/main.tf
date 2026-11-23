@@ -1,8 +1,9 @@
-resource "aws_instance" "my_instance" {
+resource "aws_instance" "Application_Server" {
+  ami           = var.ami_id
+  instance_type = var.instance_type
+  region       = var.region
 
-    ami = var.ami_id
-    instance_type = var.instance_type
-    tags = {
-        Name = var.Name
-    }
+  tags = {
+    Name = var.Name
+  }
 }
