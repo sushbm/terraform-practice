@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = var.bucket_name
+    bucket = "remotebackendserver"
     key    = "terraform.tfstate"
-    region = var.region
+    region = "ap-south-2"
     use_lockfile = true
   }
 }

@@ -4,10 +4,6 @@ resource "aws_vpc" "name" {
     tags = {
         Name = var.Name
     }
+}
     
 
-}
-resource "aws_s3_bucket" "remote_backend" {
-    bucket = var.bucket_name
-    region = var.region
-}

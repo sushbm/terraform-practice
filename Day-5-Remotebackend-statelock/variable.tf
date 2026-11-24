@@ -17,11 +17,5 @@ variable "Name" {
   default     = ""
 }
 
-#create s3 bucket for remote backend
 
-variable "bucket_name" {
-  description = "The name of the S3 bucket for remote backend"
-  type        = string
-  default     = ""
-}
 
